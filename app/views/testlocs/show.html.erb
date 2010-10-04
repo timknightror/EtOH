@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @testloc.name %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @testloc.address_id %>
+</p>
+
+<p>
+  <b>Contactrole:</b>
+  <%= @testloc.contactrole %>
+</p>
+
+<p>
+  <b>Person:</b>
+  <%= @testloc.person_id %>
+</p>
+
+<p>
+  <b>Localphone:</b>
+  <%= @testloc.localphone %>
+</p>
+
+
+<%= link_to 'Edit', edit_testloc_path(@testloc) %> |
+<%= link_to 'Back', testlocs_path %>

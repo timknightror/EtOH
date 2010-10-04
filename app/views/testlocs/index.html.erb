@@ -1,0 +1,31 @@
+<h1>Listing testlocs</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Address</th>
+    <th>Contactrole</th>
+    <th>Person</th>
+    <th>Localphone</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @testlocs.each do |testloc| %>
+  <tr>
+    <td><%= testloc.name %></td>
+    <td><%= testloc.address_id %></td>
+    <td><%= testloc.contactrole %></td>
+    <td><%= testloc.person_id %></td>
+    <td><%= testloc.localphone %></td>
+    <td><%= link_to 'Show', testloc %></td>
+    <td><%= link_to 'Edit', edit_testloc_path(testloc) %></td>
+    <td><%= link_to 'Destroy', testloc, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Testloc', new_testloc_path %>

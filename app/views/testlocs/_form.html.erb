@@ -1,0 +1,37 @@
+<%= form_for(@testloc) do |f| %>
+  <% if @testloc.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@testloc.errors.count, "error") %> prohibited this testloc from being saved:</h2>
+
+      <ul>
+      <% @testloc.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :address_id %><br />
+    <%= f.text_field :address_id %>
+  </div>
+  <div class="field">
+    <%= f.label :contactrole %><br />
+    <%= f.text_field :contactrole %>
+  </div>
+  <div class="field">
+    <%= f.label :person_id %><br />
+    <%= f.text_field :person_id %>
+  </div>
+  <div class="field">
+    <%= f.label :localphone %><br />
+    <%= f.text_field :localphone %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
