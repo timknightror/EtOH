@@ -1,0 +1,21 @@
+<%= simple_form_for(@ptype) do |f| %>
+  <% if @ptype.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@ptype.errors.count, "error") %> prohibited this ptype from being saved:</h2>
+
+      <ul>
+      <% @ptype.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="inputs">
+    <%= f.input :type %>
+  </div>
+
+  <div class="actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

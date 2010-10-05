@@ -1,4 +1,12 @@
 Drug03::Application.routes.draw do
+  resources :companies
+
+  resources :occupations
+
+  resources :people
+
+  resources :ptypes
+
   resources :addresses
 
   resources :testlocs

@@ -1,0 +1,23 @@
+<h1>Listing occupations</h1>
+
+<table>
+  <tr>
+    <th>Type</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @occupations.each do |occupation| %>
+  <tr>
+    <td><%= occupation.type %></td>
+    <td><%= link_to 'Show', occupation %></td>
+    <td><%= link_to 'Edit', edit_occupation_path(occupation) %></td>
+    <td><%= link_to 'Destroy', occupation, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Occupation', new_occupation_path %>

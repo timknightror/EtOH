@@ -12,6 +12,7 @@ gem 'formtastic'
 gem 'devise'
 gem 'warden'
 gem 'nifty-generators'
+gem 'simple_form'
 
 
 # Use unicorn as the web server

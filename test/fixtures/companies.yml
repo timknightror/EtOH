@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  add_id: 1
+  tel: MyString
+  ptype_id: 1
+
+two:
+  name: MyString
+  add_id: 1
+  tel: MyString
+  ptype_id: 1

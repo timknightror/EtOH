@@ -1,0 +1,23 @@
+<h1>Listing ptypes</h1>
+
+<table>
+  <tr>
+    <th>Type</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @ptypes.each do |ptype| %>
+  <tr>
+    <td><%= ptype.type %></td>
+    <td><%= link_to 'Show', ptype %></td>
+    <td><%= link_to 'Edit', edit_ptype_path(ptype) %></td>
+    <td><%= link_to 'Destroy', ptype, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Ptype', new_ptype_path %>

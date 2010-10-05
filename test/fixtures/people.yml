@@ -1,0 +1,29 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  ln: MyString
+  fn: MyString
+  mn: MyString
+  dob: 2010-10-05
+  tel1: MyString
+  ptype_id1: 1
+  tel2: MyString
+  ptype_id2: 1
+  add_id: 1
+  contact: false
+  client: false
+  tech: false
+
+two:
+  ln: MyString
+  fn: MyString
+  mn: MyString
+  dob: 2010-10-05
+  tel1: MyString
+  ptype_id1: 1
+  tel2: MyString
+  ptype_id2: 1
+  add_id: 1
+  contact: false
+  client: false
+  tech: false
