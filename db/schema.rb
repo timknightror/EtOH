@@ -39,7 +39,7 @@ ActiveRecord::Schema.define(:version => 20101005065712) do
   end
 
   create_table "occupations", :force => true do |t|
-    t.string   "type"
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -62,7 +62,7 @@ ActiveRecord::Schema.define(:version => 20101005065712) do
   end
 
   create_table "ptypes", :force => true do |t|
-    t.string   "type"
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

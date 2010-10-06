@@ -1,8 +1,8 @@
-<h1>Listing ptypes</h1>
+<h1>Listing Phone Types</h1>
 
 <table>
   <tr>
-    <th>Type</th>
+    <th>Phone Type</th>
     <th></th>
     <th></th>
     <th></th>
@@ -10,7 +10,7 @@
 
 <% @ptypes.each do |ptype| %>
   <tr>
-    <td><%= ptype.type %></td>
+    <td><%= ptype.name %></td>
     <td><%= link_to 'Show', ptype %></td>
     <td><%= link_to 'Edit', edit_ptype_path(ptype) %></td>
     <td><%= link_to 'Destroy', ptype, :confirm => 'Are you sure?', :method => :delete %></td>
@@ -20,4 +20,4 @@
 
 <br />
 
-<%= link_to 'New Ptype', new_ptype_path %>
+<%= link_to 'New Phone Type', new_ptype_path %>

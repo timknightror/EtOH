@@ -1,7 +1,7 @@
 class CreateOccupations < ActiveRecord::Migration
   def self.up
     create_table :occupations do |t|
-      t.string :type
+      t.string :name
 
       t.timestamps
     end

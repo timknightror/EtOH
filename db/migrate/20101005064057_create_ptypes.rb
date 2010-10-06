@@ -1,7 +1,7 @@
 class CreatePtypes < ActiveRecord::Migration
   def self.up
     create_table :ptypes do |t|
-      t.string :type
+      t.string :name
 
       t.timestamps
     end
