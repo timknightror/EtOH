@@ -6,37 +6,14 @@
     <%= javascript_include_tag :defaults %>
     <%= csrf_meta_tag %>
     <%= yield(:head) %>
-
-
   </head>
-
   <body>
-
-  <table width="90%" border="1">
-  <tr>
-    <th scope="col">&nbsp;</th>
-    <th scope="col">&nbsp;</th>
-    <th scope="col">&nbsp;</th>
-  </tr>
-  <tr>
-    <td>&nbsp;
-    	 <div id="container">
+    <div id="container">
       <% flash.each do |name, msg| %>
         <%= content_tag :div, msg, :id => "flash_#{name}" %>
       <% end %>
       <%= content_tag :h1, yield(:title) if show_title? %>
       <%= yield %>
     </div>
-    </td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-</table>
-
   </body>
 </html>
